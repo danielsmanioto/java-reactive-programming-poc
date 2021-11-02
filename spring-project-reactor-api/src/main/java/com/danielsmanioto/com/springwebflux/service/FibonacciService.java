@@ -1,4 +1,4 @@
-package com.danielsmanioto.springapi.service;
+package com.danielsmanioto.com.springwebflux.service;
 
 import org.springframework.stereotype.Service;
 

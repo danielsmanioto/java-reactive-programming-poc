@@ -1,6 +1,6 @@
-package com.danielsmanioto.springapi.controller;
+package com.danielsmanioto.com.springwebflux.controller;
 
-import com.danielsmanioto.springapi.service.FibonacciService;
+import com.danielsmanioto.com.springwebflux.service.FibonacciService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

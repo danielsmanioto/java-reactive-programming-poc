@@ -1,4 +1,4 @@
-package com.danielsmanioto.springapi.service;
+package com.danielsmanioto.com.springwebflux.service;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

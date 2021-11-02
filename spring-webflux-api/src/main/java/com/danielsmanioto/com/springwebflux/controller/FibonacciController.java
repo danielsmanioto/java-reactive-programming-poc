@@ -1,10 +1,10 @@
 package com.danielsmanioto.com.springwebflux.controller;
 
 import com.danielsmanioto.com.springwebflux.service.FibonacciService;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Flux;
 
 import java.util.List;
 
@@ -19,12 +19,12 @@ public class FibonacciController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Integer>> find() {
-        List<Integer> result = service.calculate(1597);
+    public Flux<List<Integer>> find() {
+        Flux<List<Integer>> result = Flux.just(service.calculate(1597));
 
         System.out.println(result);
 
-        return ResponseEntity.ok(result);
+        return result;
     }
 
 }
